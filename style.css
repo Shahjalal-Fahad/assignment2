@@ -1,0 +1,144 @@
+/* link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* font */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* heading style */
+h3{
+    font-weight: 700;
+    font-size: 24px;
+}
+h5{
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+}
+/* header part */
+.container{
+    display: flex;
+}
+.button-hov:hover .photo-class{
+    transform: scale(1.2);
+}
+.button-hov:hover .photo-class{
+    transform: rotateX(45deg);
+}
+button{
+    Width :196px;
+    Height :44px;
+    background: #E02C6D;
+    border-radius: 41px;
+    color: white; 
+    font-weight: bolder;  
+    /* box-shadow: none; */
+}
+/* main part */
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.collection{
+    height:476px;
+    width: 329px;
+    /* border-radius: 25px; */
+    margin-bottom: 130px;
+
+}
+.coll-des{
+    padding: 17px 15px;
+    box-shadow: 5px 5px 5px 5px grey;
+    border-radius: 5px;
+    
+
+    
+}
+.icon{
+    color:orangered ;
+    font-size: 16px;
+    margin-right: 8px;
+}
+.rating-side{
+    display: flex;
+    align-items: center;
+}
+.space{
+    margin-left: 10px;
+}
+main,.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer section */
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.footer-all{
+    padding: 50px;
+}
+.foo-icon{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.foo-icon a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 32px;
+    /* text-align: center; */
+}
+
+/* responsiveness for phone */
+@media only screen and (max-width:688px){
+    .collections{
+        /* background-color: turquoise; */
+        grid-template-columns: repeat(1,1fr);
+        /* align-items: center;
+        justify-content: center; */
+    }
+    .container{
+        display: block;
+        grid-template-columns: repeat(1,1fr);
+        /* align-items: center; */
+    }
+    
+    .photo-class{
+        width: 100%;
+    }
+    
+}
+
+/* responsiveness for phone */
+@media only screen and (max-width:992px) and (min-width:688px) {
+   
+    .collections{
+        /* background-color: turquoise; */
+        grid-template-columns: repeat(2,1fr);
+        /* align-items: center;
+        justify-content: center; */
+    }
+    .container{
+        display: block;
+        grid-template-columns: repeat(1,1fr);
+        /* align-items: center; */
+
+    }
+    
+    .photo-class{
+        width: 100%;
+    }
+    
+}
