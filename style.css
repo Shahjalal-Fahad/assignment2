@@ -33,8 +33,17 @@ button{
     font-weight: bolder;  
     /* box-shadow: none; */
 }
-button:hover .photo-class {
-    transform: scale(1.3);
+button:hover{
+    transition: transform 500ms ease-in-out;
+    transform: scale(1.1);
+}
+
+.photo {
+    transition: transform 500ms ease-in-out;
+    /* transition: width 2s, height 4s; */
+}
+.photo:hover{
+    transform: scale(1.1);
 }
 /* main part */
 .collections{
